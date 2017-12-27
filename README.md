@@ -1,6 +1,6 @@
 # Prettify JSON
 
-Программа для улучшения читаемости JSON.
+Utility for pretty view of JSON.
 
 # Quickstart
 
