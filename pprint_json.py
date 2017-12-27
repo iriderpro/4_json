@@ -12,9 +12,6 @@ def load_data(filepath):
     return (data)
 
 
-def pretty_print_json(data):
-    pprint.pprint(data)
-
 if __name__ == '__main__':
     N = input('введите путь к файлу : ')
     pprint.pprint(load_data(N))
