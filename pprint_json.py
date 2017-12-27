@@ -6,12 +6,12 @@ import pprint
 
 
 def load_data(filepath):
-    fileObj = codecs.open(filepath, "r", "utf_8_sig")
-    json_data = fileObj.read()
-    data = json.loads(json_data)
-    return (data)
+    file_obj = codecs.open(filepath, "r", "utf_8_sig")
+    json_data = file_obj.read()
+    json_loaded = json.loads(json_data)
+    return json_loaded
 
 
 if __name__ == '__main__':
-    N = input('введите путь к файлу : ')
-    pprint.pprint(load_data(N))
+    n = input('введите путь к файлу : ')
+    pprint.pprint(load_data(n))
