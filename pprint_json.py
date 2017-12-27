@@ -13,5 +13,5 @@ def load_data(filepath):
 
 
 if __name__ == '__main__':
-    n = input('введите путь к файлу : ')
-    pprint.pprint(load_data(n))
+    file_path = input('введите путь к файлу : ')
+    pprint.pprint(load_data(file_path))
