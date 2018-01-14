@@ -6,7 +6,12 @@ Utility for pretty view of JSON.
 
 for launch need python 3
 input file should be in UTF-8.
-input the file must be passed as an argument.
+input file must be passed as an argument.
+
+Example input file
+```
+[{"Id":"79742784-9ef3-4543-bc98-a219a8903c18","Number":1,"Cells":{"global_id":14371450,"Name":"Ароматный Мир","IsNetObject":"да","OperatingCompany":"Ароматный Мир","TypeService":"реализация продовольственных товаров","AdmArea":"Западный административный округ","District":"район Кунцево","Address":"улица Академика Павлова, дом 10","PublicPhone":[{"PublicPhone":"(495) 777-51-95"}],"WorkingHours":[{"Hours":"09:30-22:30","DayOfWeek":"понедельник"},{"Hours":"09:30-22:30","DayOfWeek":"вторник"},{"Hours":"09:30-22:30","DayOfWeek":"среда"},{"Hours":"09:30-22:30","DayOfWeek":"четверг"},{"Hours":"09:30-22:30","DayOfWeek":"пятница"},{"Hours":"09:30-22:30","DayOfWeek":"суббота"},{"Hours":"09:30-22:30","DayOfWeek":"воскресенье"}],"ClarificationOfWorkingHours":null,
+```
 
 Example of script launch on windows, Python 3.6:
 ```
@@ -14,8 +19,7 @@ E:\WORK\json\pprint_json.py alco_shops.json
 
 ```
 
-
-Example of script launch on Linux, Python 3.5:
+Example of script launch on Linux, Python 3.6:
 
 ```
 $ ~/WORK/json$ python3 pprint_json.py alco_shops.json 
