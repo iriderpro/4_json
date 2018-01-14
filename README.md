@@ -4,15 +4,16 @@ Utility for pretty view of JSON.
 
 # Quickstart
 
-for launch need python 3.
+for launch need python 3
 input file should be in UTF-8.
+input the file must be passed as an argument.
 
 Example of script launch on windows, Python 3.6:
 ```
 E:\WORK\json\pprint_json.py alco_shops.json
 
 ```
-введите путь к файлу : E:\WORK\wallie\3\json
+
 
 Example of script launch on Linux, Python 3.5:
 
