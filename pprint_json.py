@@ -9,14 +9,26 @@ def load_data(filepath):
 
         json_load = json.load(file_obj)
 
-    print(json.dumps(json_load, ensure_ascii=False, indent=4, sort_keys=True))
+    return json_load
+
+
+def pretty_print_json(data):
+
+    json_dumps = json.dumps(data, ensure_ascii=False, indent=4, sort_keys=True)
+
+    return json_dumps
 
 
 if __name__ == '__main__':
 
     if len(sys.argv) > 1:
 
-        load_data(sys.argv[1])
+        if os.path.exists(sys.argv[1]):
+
+            print (pretty_print_json(load_data(sys.argv[1])))
+
+        else:
+            print("файла не существует")
 
     else:
-        print("нет входного файла")
+        print ("нет входного файла")
