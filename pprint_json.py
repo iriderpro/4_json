@@ -1,17 +1,22 @@
-#!/usr/bin/python3
-# -*- coding=utf-8 -*-
 import json
-import codecs
-import pprint
+import sys
+import os
 
 
 def load_data(filepath):
-    file_obj = codecs.open(filepath, "r", "utf_8_sig")
-    json_data = file_obj.read()
-    json_loaded = json.loads(json_data)
-    return json_loaded
+
+    with open(filepath, "r", encoding='utf8', errors='ignore') as file_obj:
+
+        json_load = json.load(file_obj)
+
+    print(json.dumps(json_load, ensure_ascii=False, indent=4, sort_keys=True))
 
 
 if __name__ == '__main__':
-    file_path = input('введите путь к файлу : ')
-    pprint.pprint(load_data(file_path))
+
+    if len(sys.argv) > 1:
+
+        load_data(sys.argv[1])
+
+    else:
+        print("нет входного файла")
