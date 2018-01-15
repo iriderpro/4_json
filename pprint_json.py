@@ -12,9 +12,9 @@ def load_data(filepath):
     return json_load
 
 
-def pretty_print_json(data):
+def pretty_print_json(json_obj):
 
-    json_dumps = json.dumps(data, ensure_ascii=False, indent=4, sort_keys=True)
+    json_dumps = json.dumps(json_obj, ensure_ascii=False, indent=4, sort_keys=True)
 
     return json_dumps
 
