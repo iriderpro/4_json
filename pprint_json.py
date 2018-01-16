@@ -18,7 +18,7 @@ def serialize_obj_json(json_obj):
 if __name__ == '__main__':
     if len(sys.argv) > 1:
         if os.path.exists(sys.argv[1]):
-            print (serialize_obj(deserialize_fp(sys.argv[1])))
+            print (serialize_obj_json(deserialize_fp_json(sys.argv[1])))
         else:
             print("файла не существует")
     else:
