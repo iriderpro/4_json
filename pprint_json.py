@@ -5,12 +5,12 @@ import os
 
 def load_data(filepath):
     with open(filepath, "r", encoding='utf8') as file_obj:
-        json_obj = json.load(file_obj)
-    return json_obj
+        python_obj = json.load(file_obj)
+    return python_obj
 
 
-def prettify_json(json_data):
-    json_str = json.dumps(json_data, ensure_ascii=False,
+def prettify_json(py_obj):
+    json_str = json.dumps(py_obj, ensure_ascii=False,
                           indent=4, sort_keys=True)
     return json_str
 
